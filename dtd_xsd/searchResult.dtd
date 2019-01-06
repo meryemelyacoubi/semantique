@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT recherche (sequences)>
+<!ELEMENT sequences (sequence+)>
+<!ELEMENT sequence (sequence_id, sequence_value)>
+<!ELEMENT sequence_id (#PCDATA)>
+<!ELEMENT sequence_value (#PCDATA)>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="description">
+		<xs:complexType>
+				<xs:sequence>
+					<xs:element name="sequences">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="sequence" minOccurs="1" maxOccurs="unbounded" >
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="sequence_id" type="xs:string"/>
+											<xs:element name="sequence_value" type="xs:string"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="organisme" type="xs:string"/>
+					<xs:element name="date" type="xs:date"/>
+					<xs:element name="machine" type="xs:string"/>
+					<xs:element name="other_informations" type="xs:string"/>
+				</xs:sequence>
+		 </xs:complexType>
+	</xs:element>
+</xs:schema>
